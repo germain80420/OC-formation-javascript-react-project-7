@@ -1,0 +1,244 @@
+body{
+    background-color: #D9D9D9;
+}
+header{
+    height: 500px;
+    background-image: url("../assets/images/imageFondHeader.jpg");
+    
+}
+header img{
+    padding: 30px;
+    width: 30%;
+}
+header h1{
+    color: #FFD15B;
+    padding: 50px;
+    text-align: center;
+    width: 65%;
+    margin: auto;
+}
+#search_bar{
+    width: 60%;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+}
+input {
+    border: none;
+    outline: none;
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+}
+
+input::placeholder {
+
+    width: 100%;
+
+}
+header span{
+    position: absolute;
+    right: 5px;
+    top: 12.5%;
+    background-color: #1B1B1B;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    align-items: center;
+}
+header span i{
+    color: white;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+main{
+    height: fit-content;
+}
+#filters{
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+}
+.filter{
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    width: 15%;
+    border-radius: 10px;
+    margin: 30px;
+    height: fit-content;
+    max-height: 315px;
+    overflow: hidden;
+} 
+.filter:hover{
+    cursor: pointer;
+}
+.filter p{
+    font-weight: normal;
+    font-size: 1.1em;
+    position: relative;
+    align-items: center;
+    padding-left: 10px;
+}
+.filter p i{
+    position: absolute;
+    right: 5px;
+    top:12.5%;
+}
+.contentFilter{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 20px;
+    max-height: 315px;
+}
+.search_bar_filter{
+    width: fit-content;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.search_bar_filter input{
+    padding-left: 5px;
+}
+.search_bar_filter span{
+   position: absolute;
+   right: 5px;
+   color: grey;
+}
+.filterResult ul{
+    margin: 0;
+    padding: 0;    
+    text-overflow: clip;
+
+}
+.filterResult li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.filterResult li:hover{
+   background-color: #FFD15B;
+}
+#nbRecettes{
+    margin-top: 25px;
+    display: flex;
+    width: auto;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: left;
+}
+.card_recipe {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    aspect-ratio: 9/16;
+    margin: 1.5%;
+    border-radius: 15px;
+    background: #FFFFFF;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.heading{
+    display: flex;
+    background-color: #3282F7;
+
+}
+.img_recipe {
+    background: #C7BEBE;
+    aspect-ratio: 5/3;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit:cover;
+}
+
+.recipe_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.recipe_heading {
+    padding: 10px;
+    margin-top: 15px;
+    height: 10%;
+}
+
+.recipe_heading h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: auto;
+}
+
+.recipe_heading span {
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #FFD15B;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+.headingIngredients{
+    font-size: 0.8em;
+    height: fit-content;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+.recipe_ingredients {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.recipe_ingredients ul{
+    margin: 0;
+    padding: 0;
+}
+.recipe_ingredients li{
+    width: 50%;
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+.recipe_ingredients span {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.recipe_description {
+   
+    width: 100%;
+    font-size: 0.8em;
+    text-align: justify;
+    overflow: hidden;
+    aspect-ratio: 16/6;
+    text-overflow: ellipsis;
+}
+.recipe_description h2{
+    font-size: 0.9;
+}
