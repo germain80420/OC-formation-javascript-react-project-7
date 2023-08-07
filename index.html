@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
         <img src="assets/images/Logo.png" alt="Logo">
@@ -30,12 +28,12 @@
                         <div id="contentFilterIngredient" class="hidden">
                             <div class="search_bar_filter">
                                 <input type="text" name="inputSearchIngredient" id="inputSearchIngredient"><span><i
-                                    class="fa-solid fa-search"></i></span>
+                                        class="fa-solid fa-search"></i></span>
                             </div>
                             <div class="filterResult" id="filterResultIngredients">
-                                
+
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="filter col-3" id="filterAppareil">
@@ -43,10 +41,10 @@
                         <div id="contentFilterAppareil" class="hidden">
                             <div class="search_bar_filter">
                                 <input type="text" name="inputSearchAppareil" id="inputSearchAppareil"><span><i
-                                    class="fa-solid fa-search"></i></span>
+                                        class="fa-solid fa-search"></i></span>
                             </div>
                             <div class="filterResult" id="filterResultAppareils">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -55,27 +53,29 @@
                         <div id="contentFilterUstensile" class="hidden">
                             <div class="search_bar_filter">
                                 <input type="text" name="inputSearchUstensile" id="inputSearchUstensile"><span><i
-                                    class="fa-solid fa-search"></i></span>
+                                        class="fa-solid fa-search"></i></span>
                             </div>
                             <div class="filterResult" id="filterResultUstensiles">
-                                
+
                             </div>
 
                         </div>
                     </div>
                     <div class="col-2"></div>
-                    <div class="col-2" id="nbRecettes"><p>1500 Recettes</p></div>
+                    <div class="col-2" id="nbRecettes"></div>
                 </div>
 
             </div>
+            <div id="listTags"></div>
             <div class="recipe-container" id="recipe-container">
-
-
             </div>
         </div>
     </main>
     <script src="data/recipes.js"></script>
     <script src="scripts/factories/recipeFactory.js"></script>
+    <script src="scripts/factories/filterFactory.js"></script>
+    <script src="scripts/factories/tagFactory.js"></script>
+    <script src="scripts/utils/search.js"></script>
     <script src="scripts/pages/index.js"></script>
     <script src="https://kit.fontawesome.com/c3461940f5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
