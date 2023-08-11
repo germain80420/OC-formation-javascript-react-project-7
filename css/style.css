@@ -1,23 +1,26 @@
-body{
+body {
     background-color: #D9D9D9;
 }
-header{
+
+header {
     height: 500px;
     background-image: url("../assets/images/imageFondHeader.jpg");
-    
 }
-header img{
+
+header img {
     padding: 30px;
     width: 30%;
 }
-header h1{
+
+header h1 {
     color: #FFD15B;
     padding: 50px;
     text-align: center;
     width: 65%;
     margin: auto;
 }
-#search_bar{
+
+#search_bar {
     width: 60%;
     border-radius: 5px;
     background-color: white;
@@ -25,6 +28,7 @@ header h1{
     position: relative;
     padding: 10px;
 }
+
 input {
     border: none;
     outline: none;
@@ -38,7 +42,8 @@ input::placeholder {
     width: 100%;
 
 }
-header span{
+
+header span {
     position: absolute;
     right: 5px;
     top: 12.5%;
@@ -47,27 +52,31 @@ header span{
     border-radius: 5px;
     align-items: center;
 }
-header span i{
+
+header span i {
     color: white;
     padding: 10px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-main{
+
+main {
     height: fit-content;
     position: relative;
 
 }
-#filters{
-    display: inline-block;
+
+#filters {
+    display: flex;
     margin: auto;
     width: 90%;
     position: relative;
 }
-.filter{
-    
+
+.filter {
+
     background-color: white;
     padding-left: 0;
     padding-right: 0;
@@ -79,30 +88,35 @@ main{
     max-height: 315px;
     overflow: hidden;
     z-index: 10;
-} 
-.filter:hover{
+}
+
+.filter:hover {
     cursor: pointer;
 }
-.filter p{
+
+.filter p {
     font-weight: normal;
     font-size: 1.1em;
     position: relative;
     align-items: center;
     padding-left: 10px;
 }
-.filter p i{
+
+.filter p i {
     position: absolute;
     right: 5px;
-    top:12.5%;
+    top: 12.5%;
 }
-.contentFilter{
+
+.contentFilter {
     display: flex;
     flex-direction: column;
     height: fit-content;
     margin-bottom: 20px;
     max-height: 315px;
 }
-.search_bar_filter{
+
+.search_bar_filter {
     width: fit-content;
     position: relative;
     border: 1px solid grey;
@@ -112,35 +126,43 @@ main{
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.search_bar_filter input{
+
+.search_bar_filter input {
     padding-left: 5px;
 }
-.search_bar_filter span{
-   position: absolute;
-   right: 5px;
-   color: grey;
+
+.search_bar_filter span {
+    position: absolute;
+    right: 5px;
+    color: grey;
 }
-.filterResult ul{
+
+.filterResult ul {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     text-overflow: clip;
 
 }
-.filterResult li{
+
+.filterResult li {
     list-style: none;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 0.8em;
 }
-.filterResult li:hover{
-   background-color: #FFD15B;
+
+.filterResult li:hover {
+    background-color: #FFD15B;
 }
-.tagActive{
+
+.tagActive {
     background-color: #FFD15B;
     font-weight: bold;
     position: relative;
 }
-.closeSelect,.closeTag{
+
+.closeSelect,
+.closeTag {
     border-radius: 50px;
     background-color: black;
     color: white;
@@ -153,29 +175,31 @@ main{
 
 
 
-#nbRecettes{
+#nbRecettes {
     position: absolute;
-    right:8%;
-    margin-top: 25px;
+    right: 0px;
     display: flex;
+    margin-top: 25px;
+    margin-right: 0px;
     width: auto;
     font-size: 1.9em;
     font-weight: bold;
 }
 
 
-#listTags ul{
+#listTags ul {
     position: absolute;
     top: 100px;
-    
+    margin-left: 50px;
     width: 80%;
     display: flex;
     justify-content: left;
 
 }
-#listTags li{
+
+#listTags li {
     list-style: none;
-    width: 15%;
+    width: 18%;
     padding: 10px;
     margin-right: 20px;
     background-color: #FFD15B;
@@ -183,7 +207,8 @@ main{
     position: relative;
 
 }
-.closeTag{
+
+.closeTag {
     position: absolute;
     right: 10px;
     top: 30%;
@@ -191,16 +216,17 @@ main{
     background-color: transparent;
     color: black;
     font-size: 0.9em;
-    
 
-}
-.closeTag:hover{
-    
-cursor: pointer;
 
 }
 
-.recipe-container{
+.closeTag:hover {
+
+    cursor: pointer;
+
+}
+
+.recipe-container {
     position: absolute;
     top: 120px;
     left: 50px;
@@ -208,8 +234,8 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    /* justify-content: center; */
 }
+
 .card_recipe {
     display: flex;
     flex-direction: column;
@@ -223,17 +249,18 @@ cursor: pointer;
 }
 
 
-.heading{
+.heading {
     display: flex;
     background-color: #3282F7;
 
 }
+
 .img_recipe {
     background: #C7BEBE;
     aspect-ratio: 5/3;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .recipe_content {
@@ -268,7 +295,8 @@ cursor: pointer;
     padding-bottom: 5px;
     border-radius: 20px;
 }
-.headingIngredients{
+
+.headingIngredients {
     font-size: 0.8em;
     height: fit-content;
     margin-top: 10px;
@@ -281,11 +309,13 @@ cursor: pointer;
     flex-wrap: wrap;
     margin-top: 0px;
 }
-.recipe_ingredients ul{
+
+.recipe_ingredients ul {
     margin: 0;
     padding: 0;
 }
-.recipe_ingredients li{
+
+.recipe_ingredients li {
     width: 50%;
     text-decoration: none;
     list-style: none;
@@ -299,7 +329,7 @@ cursor: pointer;
 }
 
 .recipe_description {
-   
+
     width: 100%;
     font-size: 0.8em;
     text-align: justify;
@@ -307,6 +337,7 @@ cursor: pointer;
     aspect-ratio: 16/6;
     text-overflow: ellipsis;
 }
-.recipe_description h2{
+
+.recipe_description h2 {
     font-size: 0.9;
 }
