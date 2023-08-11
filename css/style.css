@@ -48,7 +48,7 @@ header span {
     right: 5px;
     top: 12.5%;
     background-color: #1B1B1B;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     border-radius: 5px;
     align-items: center;
 }
@@ -339,5 +339,5 @@ main {
 }
 
 .recipe_description h2 {
-    font-size: 0.9;
+    font-size: 0.9em;
 }
