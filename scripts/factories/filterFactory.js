@@ -19,7 +19,6 @@ function setTagActive(liElement, tagExist, tags) {
     btnDelete.classList.add("fa-x");
     btnDelete.classList.add("closeSelect");
     if (!tagExist) {
-        console.log(liElement.innerText);
         tags.push(liElement.innerText);
         displayTags();
     }
