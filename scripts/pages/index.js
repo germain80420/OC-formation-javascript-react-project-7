@@ -23,7 +23,7 @@ function getFiltersResultsByRecipes(recipes, filter, keyword) {
                 break;
         }
     });
-    if (keyword.length > 2) {
+    if (keyword.length > 2 && checkInputFormValidity(keyword)) {
         let filteredByKeyword = [];
         listFiltered.forEach(elementFilter => {
             if (elementFilter.toLowerCase().includes(keyword.toLowerCase())) {
@@ -50,6 +50,10 @@ function deleteTag(tag) {
     tagsUstensil = filterTags[2];
     displayTags();
     filterRecipes();
+}
+function checkInputFormValidity(keyword){
+    const letters = /^[A-Za-z\s]*$/;
+    return letters.test(keyword);
 }
 function init() {
     const filters = document.getElementsByClassName("filter");

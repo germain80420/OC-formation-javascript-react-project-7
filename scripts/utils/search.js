@@ -11,8 +11,8 @@ function filterTexte(listRecipes,keyword){
   function filterRecipes() {
      let recipesFiltered = [];
      //on tri sur le mot clé si il y a plus de 2 caracteres
-     if (inputSearch.value.length > 2) {
-         recipesFiltered = filterTexte(recipes,inputSearch.value);
+     if (inputSearch.value.trim().length > 2 && checkInputFormValidity(inputSearch.value.trim())) {
+         recipesFiltered = filterTexte(recipes,inputSearch.value.trim());
      }
      //si le champ de recherche fait moins de 3 caracteres on récupére toutes les recettes
      else {
@@ -48,8 +48,8 @@ function filterTexte(listRecipes,keyword){
          }
      })
      displayRecipes(recipesFilterByTag);
-     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,1,inputSearchIngredients.value),filterResultIngredients,tagsIngredient);
-     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,2,inputSearchAppareils.value),filterResultAppareils,tagsAppareil);
-     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,3,inputSearchUstensiles.value),filterResultUstensiles,tagsUstensil);
+     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,1,inputSearchIngredients.value.trim()),filterResultIngredients,tagsIngredient);
+     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,2,inputSearchAppareils.value.trim()),filterResultAppareils,tagsAppareil);
+     displayFilters(getFiltersResultsByRecipes(recipesFilterByTag,3,inputSearchUstensiles.value.trim()),filterResultUstensiles,tagsUstensil);
      return recipesFilterByTag;
  }
