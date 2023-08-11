@@ -100,7 +100,10 @@ function displayRecipes(recipes) {
         divSearchResult.appendChild(recipeFactory(recipe));
 
     })
-    document.getElementById("nbRecettes").innerHTML = "<p>" + recipes.length + " Recettes</p>";
+    if(recipes.length==0){
+        divSearchResult.innerHTML="<p>Aucune recette ne contient \""+inputSearch.value+"\", vous pouvez chercher « tarte aux pommes », « poisson », etc.</p>"
+    }
+    document.getElementById("nbRecettes").innerHTML = "<p>" + recipes.length + " Recette"+(recipes.length>1?"s":"")+"</p>";
 }
 const inputSearch = document.getElementById("search_input");
 const inputSearchIngredients = document.getElementById("inputSearchIngredient");
